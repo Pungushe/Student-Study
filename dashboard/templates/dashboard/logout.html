@@ -1,0 +1,14 @@
+{% extends 'dashboard/base.html' %}
+{% load static %}
+{% load crispy_forms_tags%}
+{% block content %}
+
+
+<div class="border-top pt-3 text-center">
+  <h2>Вы вышли из системы</h2>
+
+  <small class="text-muted">
+    <a class="btn btn-danger" href="{% url 'login' %}">Войдите снова </a>
+  </small>
+</div>
+{% endblock content %}
